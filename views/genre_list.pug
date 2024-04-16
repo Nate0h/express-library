@@ -6,6 +6,7 @@ block content
   if genre_list.length
     ul
       each genre in genre_list
-        li #{genre.name}
+        li 
+          a(href= genre.url) #{genre.name}
   else
     p There are no authors.
